@@ -1,2 +1,2 @@
 # Calculator
-## this is feature branch - js logic
+## this is development branch
