@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Calculator</title>
+    <title>Advanced Calculator</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Professional Calculator</h1>
+        <h1>Advanced Calculator</h1>
         <div class="calculator">
             <input type="text" id="display" class="display" disabled>
             <div class="buttons">
@@ -28,9 +28,22 @@
                 <button class="btn operator" onclick="appendOperator('-')">-</button>
 
                 <button class="btn" onclick="appendNumber('0')">0</button>
-                <button class="btn clear" onclick="clearDisplay()">C</button>
+                <button class="btn" onclick="appendOperator('.')">.</button>
                 <button class="btn equal" onclick="calculateResult()">=</button>
                 <button class="btn operator" onclick="appendOperator('+')">+</button>
+
+                <button class="btn function" onclick="appendFunction('sqrt(')">√</button>
+                <button class="btn function" onclick="appendFunction('log(')">log</button>
+                <button class="btn function" onclick="appendFunction('sin(')">sin</button>
+                <button class="btn function" onclick="appendFunction('cos(')">cos</button>
+
+                <button class="btn function" onclick="appendFunction('tan(')">tan</button>
+                <button class="btn function" onclick="appendFunction('^')">^</button>
+                <button class="btn" onclick="appendFunction('(')">(</button>
+                <button class="btn" onclick="appendFunction(')')">)</button>
+
+                <button class="btn clear" onclick="clearDisplay()">C</button>
+                <button class="btn" onclick="deleteLast()">⌫</button>
             </div>
         </div>
     </div>
